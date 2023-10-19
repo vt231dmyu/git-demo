@@ -32,35 +32,6 @@ int main()
 		}; break;
 	}
 	case 2: {
-		int option;
-		float x, y, a, f;
-		printf("Введіть значення x: "); scanf("%f", &x);
-		printf("Введіть значення y: "); scanf("%f", &y);
-
-		printf("Оберіть вид функції f(x):\n1) sin(x);\n2) x^2;\n3) e^x;\n"); scanf("%d", &option);
-
-		switch (option) {
-		case 1: f = sin(x); printf("f(x) = sin(x);"); break;
-		case 2: f = pow(x, 2); printf("f(x) = x^2;"); break;
-		case 3: f = exp(x); printf("f(x) = e^x;"); break;
-		default: printf("ПОМИЛКА! Такої функції не знайдено"); break;
-		}
-
-		if (option == 1 || option == 2 || option == 3) {
-			if (fabs(x * y) > 10) {
-				a = log(fabs(f) + fabs(y));
-			}
-			else if (fabs(x * y) < 10) {
-				a = exp(f + y);
-			}
-			else {
-				a = pow(fabs(f), 1.0 / 3) + y;
-			}
-
-			printf("\na = %f", a);
-		}; break;
-	}
-	case 3: {
 		int num;
 		printf("Введіть вік від 20 до 69: "); scanf("%d", &num);
 		if (20 <= num && num <= 69) {

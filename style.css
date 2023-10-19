@@ -204,3 +204,39 @@ body {
   }
 }
 
+.menu__icon {
+	display: none;
+ }
+ 
+ .menu__body {
+	position: relative;
+ }
+ 
+ .menu__list li {
+	position: relative;
+	margin: 0px 0px 0px 40px;
+ }
+ 
+ .menu__link {
+	color: #fff;
+	font-size: 17px;
+	line-height: calc(27 / 17 * 100%);
+ }
+ 
+ .menu__link:hover {
+	text-decoration: underline;
+ }
+
+ @media (min-width: 767.98px) {
+	.menu__list {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-align: center;
+			-ms-flex-align: center;
+				 align-items: center;
+	}
+	.menu__list > li {
+	  padding: 10px 0px;
+	}
+ }
