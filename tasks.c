@@ -60,6 +60,46 @@ int main()
 			printf("\na = %f", a);
 		}; break;
 	}
+	case 3: {
+		int num;
+		printf("¬вед≥ть в≥к в≥д 20 до 69: "); scanf("%d", &num);
+		if (20 <= num && num <= 69) {
+			switch (num / 10) {
+			case 2: printf("%d - двадц€ть ", num); break;
+			case 3: printf("%d - тридц€ть ", num); break;
+			case 4: printf("%d - сорок ", num); break;
+			case 5: printf("%d - п'€тдес€т ", num); break;
+			case 6: printf("%d - ш≥стдес€т ", num); break;
+			}
+			switch (num % 10) {
+			case 1: printf("один "); break;
+			case 2: printf("два "); break;
+			case 3: printf("три "); break;
+			case 4: printf("чотири "); break;
+			case 5: printf("п'€ть "); break;
+			case 6: printf("ш≥сть "); break;
+			case 7: printf("с≥м "); break;
+			case 8: printf("в≥с≥м "); break;
+			case 9: printf("дев'€ть "); break;
+			}
+			switch (num % 10) {
+			case 1: printf("р≥к"); break;
+			case 2:
+			case 3:
+			case 4: printf("роки"); break;
+			case 0:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9: printf("рок≥в"); break;
+			}
+		}
+		else {
+			printf("ѕќћ»Ћ ј! ¬ведений в≥к не входить у вказаний пром≥жок");
+		}
+		break;
+	}
 	default: {
 		printf("ѕќћ»Ћ ј! “акого завданн€ не знайдено"); break;
 	}
